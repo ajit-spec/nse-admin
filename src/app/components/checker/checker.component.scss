@@ -1,0 +1,14 @@
+.container {
+  padding: 2rem;
+}
+
+.mat-tab-link {
+  color: #A63D40;
+
+  &.active {
+    border-bottom: 2px solid #A63D40;
+    opacity: 1;
+  }
+}
+
+

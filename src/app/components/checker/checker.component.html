@@ -1,0 +1,23 @@
+<div class="container">
+
+  <nav mat-tab-nav-bar>
+
+    <a mat-tab-link [routerLink]="['/checker']" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">
+      New Client
+    </a>
+
+    <a mat-tab-link [routerLink]="['/checker', 'disabled-client']" [routerLinkActive]="'active'">
+      disabled client
+    </a>
+
+    <a mat-tab-link [routerLink]="['/checker', 'historical-client']" [routerLinkActive]="'active'">
+      historical client
+    </a>
+
+  </nav>
+
+  <router-outlet></router-outlet>
+
+
+</div>
+

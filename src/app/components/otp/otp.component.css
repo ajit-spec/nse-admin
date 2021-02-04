@@ -1,0 +1,66 @@
+.otp-wrapper {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.otp-wrapper .top-section h2 {
+  font-size: 1.5rem;
+  line-height: calc(1.5rem * 1.42857);
+}
+.otp-wrapper .top-section svg {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 3rem auto 1rem;
+}
+.otp-wrapper .top-section p {
+  font-size: 0.9rem;
+  line-height: calc(0.9rem * 1.42857);
+}
+.otp-wrapper form {
+  margin-top: 2rem;
+}
+.otp-wrapper form .input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+.otp-wrapper form .input-wrapper .mat-form-field {
+  width: 20%;
+}
+.otp-wrapper form .input-wrapper .mat-form-field.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+  margin-left: 0;
+}
+.otp-wrapper form .input-wrapper .mat-form-field.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-outline.mat-form-field-can-float .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix .mat-input-element {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.otp-wrapper form .timer {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.otp-wrapper form p {
+  font-size: 1.2rem;
+  color: #272727;
+  margin: 1rem 0 2rem;
+}
+.otp-wrapper form p a {
+  text-decoration: none;
+  color: #3a2d7d;
+  font-weight: 700;
+  cursor: pointer;
+}
+.otp-wrapper form button.mat-button-disabled {
+  background-color: #3a2d7d !important;
+  opacity: 0.5 !important;
+  color: #fff !important;
+}
+
+/*# sourceMappingURL=otp.component.css.map */

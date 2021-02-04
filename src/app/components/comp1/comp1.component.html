@@ -1,0 +1,103 @@
+<div class="container">
+
+  <ng-container *ngIf="this.userService.getnewclients().length === 0">
+
+    <h3>no users available</h3>
+
+  </ng-container>
+
+  <ng-container *ngIf="this.userService.getnewclients().length > 0">
+
+    <h3 class="heading-text">(New Client pending for <span>Approval</span>)</h3>
+
+    <div class="table-filter-wrapper">
+      <mat-form-field appearance="standard">
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Search by name" #input>
+        <button mat-icon-button matsuffix>
+          <mat-icon>search</mat-icon>
+        </button>
+
+      </mat-form-field>
+    </div>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+
+      <!-- Position Column -->
+
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef> Date </th>
+        <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef> Email </th>
+        <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="category">
+        <th mat-header-cell *matHeaderCellDef> Category </th>
+        <td mat-cell *matCellDef="let element"> {{element.category}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="organization">
+        <th mat-header-cell *matHeaderCellDef> Organization </th>
+        <td mat-cell *matCellDef="let element"> {{element.organization}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="cmdatatype">
+        <th mat-header-cell *matHeaderCellDef> CM Datatype </th>
+        <td mat-cell *matCellDef="let element"> {{element.cmdatatype}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="fodatatype">
+        <th mat-header-cell *matHeaderCellDef> FO Datatype </th>
+        <td mat-cell *matCellDef="let element"> {{element.fodatatype}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="greeksdatatype">
+        <th mat-header-cell *matHeaderCellDef> GREEKS Datatype </th>
+        <td mat-cell *matCellDef="let element"> {{element.greeksdatatype}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let element" class="actions-column">
+          <button mat-icon-button [matTooltip]="'Download'" [matTooltipClass]="'primary-tooltip'" [matTooltipPosition]="'left'">
+            <mat-icon>get_app</mat-icon>
+          </button>
+          <button mat-icon-button [routerLink]="['/maker', 'new-client', element.name]" [matTooltip]="'Open'" [matTooltipClass]="'primary-tooltip'" [matTooltipPosition]="'right'">
+            <mat-icon>launch</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" [@animation2]="'state3'"></tr>
+
+      <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" colspan="9">No data matching the filter "{{input.value}}"</td>
+      </tr>
+
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10]" showFirstLastButtons [pageSize]="5" [length]="this.userService.getnewclients().length" [color]="'primary'"></mat-paginator>
+
+
+  </ng-container>
+
+</div>
+
+
+

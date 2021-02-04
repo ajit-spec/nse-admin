@@ -1,0 +1,37 @@
+<div class="container">
+
+  <nav mat-tab-nav-bar [color]="'primary'">
+
+    <a mat-tab-link [routerLink]="['/maker']" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">
+      <mat-icon>
+        person_add
+      </mat-icon>
+      <span [ngStyle]="{
+      marginLeft: '1rem'
+      }">New Client</span>
+    </a>
+    <a mat-tab-link [routerLink]="['/maker', 'rejected-client']" [routerLinkActive]="'active'">
+      <mat-icon>
+        person_remove
+      </mat-icon>
+      <span [ngStyle]="{
+      marginLeft: '1rem'
+      }">Rejected Client</span>
+    </a>
+
+    <a mat-tab-link [routerLink]="['/maker', 'disabled-client']" [routerLinkActive]="'active'">
+      <mat-icon>
+        person_add_disabled
+      </mat-icon>
+      <span [ngStyle]="{
+      marginLeft: '1rem'
+      }">Disabled Client</span>
+    </a>
+
+  </nav>
+
+  <router-outlet></router-outlet>
+
+
+</div>
+

@@ -1,0 +1,33 @@
+<div class="container">
+
+  <div class="logo-wrapper">
+    <img src="../../../assets/images/nse-logo.jpg" alt="NSE India" title="NSE India, National Stock Exchange">
+  </div>
+
+  <nav class="nav-links-wrapper">
+    <a [routerLink]="['/maker']" class="nav-link" mat-button [routerLinkActive]="'active'">maker</a>
+    <a [routerLink]="['/checker']" class="nav-link" mat-button [routerLinkActive]="'active'">checker</a>
+    <a [routerLink]="['/report']" class="nav-link" mat-button [routerLinkActive]="'active'">report</a>
+    <a [routerLink]="['/client-request']" class="nav-link" mat-button [routerLinkActive]="'active'">client request</a>
+
+    <a [matMenuTriggerFor]="admin" class="nav-link dropdown" mat-button>
+      <span>Admin</span>
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </a>
+    <mat-menu #admin="matMenu" xPosition="before">
+      <a mat-menu-item class="nav-link">Item 1</a>
+      <a mat-menu-item class="nav-link">Item 2</a>
+    </mat-menu>
+
+    <a [matMenuTriggerFor]="adminName" class="nav-link dropdown" mat-button>
+<!--      <span>{{loginUser?.email}}</span>-->
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </a>
+    <mat-menu #adminName="matMenu" xPosition="before">
+      <a mat-menu-item class="nav-link">Item 1</a>
+      <a mat-menu-item class="nav-link">Item 2</a>
+    </mat-menu>
+
+  </nav>
+
+</div>

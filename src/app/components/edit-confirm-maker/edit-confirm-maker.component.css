@@ -1,0 +1,273 @@
+.main-wrapper {
+  padding: 2rem 0;
+}
+.main-wrapper .container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 2px solid #3a2d7d;
+  border-radius: 0.5rem;
+}
+.main-wrapper .container form #personal-details-wrapper,
+.main-wrapper .container form #market-segment-wrapper,
+.main-wrapper .container form #payment-details-wrapper,
+.main-wrapper .container form #add-subscription-details-wrapper {
+  margin-bottom: 1rem;
+}
+.main-wrapper .container form #personal-details-wrapper h2,
+.main-wrapper .container form #market-segment-wrapper h2,
+.main-wrapper .container form #payment-details-wrapper h2,
+.main-wrapper .container form #add-subscription-details-wrapper h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.main-wrapper .container form #personal-details-wrapper #verified-wrapper,
+.main-wrapper .container form #market-segment-wrapper #verified-wrapper,
+.main-wrapper .container form #payment-details-wrapper #verified-wrapper,
+.main-wrapper .container form #add-subscription-details-wrapper #verified-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.main-wrapper .container form #personal-details-wrapper #verified-wrapper h2,
+.main-wrapper .container form #market-segment-wrapper #verified-wrapper h2,
+.main-wrapper .container form #payment-details-wrapper #verified-wrapper h2,
+.main-wrapper .container form #add-subscription-details-wrapper #verified-wrapper h2 {
+  margin-right: 2rem;
+}
+.main-wrapper .container form #personal-details-wrapper #verified-wrapper .not-verified,
+.main-wrapper .container form #personal-details-wrapper #verified-wrapper .verified,
+.main-wrapper .container form #market-segment-wrapper #verified-wrapper .not-verified,
+.main-wrapper .container form #market-segment-wrapper #verified-wrapper .verified,
+.main-wrapper .container form #payment-details-wrapper #verified-wrapper .not-verified,
+.main-wrapper .container form #payment-details-wrapper #verified-wrapper .verified,
+.main-wrapper .container form #add-subscription-details-wrapper #verified-wrapper .not-verified,
+.main-wrapper .container form #add-subscription-details-wrapper #verified-wrapper .verified {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+}
+.main-wrapper .container form #personal-details-wrapper #verified-wrapper .not-verified h3,
+.main-wrapper .container form #personal-details-wrapper #verified-wrapper .verified h3,
+.main-wrapper .container form #market-segment-wrapper #verified-wrapper .not-verified h3,
+.main-wrapper .container form #market-segment-wrapper #verified-wrapper .verified h3,
+.main-wrapper .container form #payment-details-wrapper #verified-wrapper .not-verified h3,
+.main-wrapper .container form #payment-details-wrapper #verified-wrapper .verified h3,
+.main-wrapper .container form #add-subscription-details-wrapper #verified-wrapper .not-verified h3,
+.main-wrapper .container form #add-subscription-details-wrapper #verified-wrapper .verified h3 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.main-wrapper .container form #personal-details-wrapper #verified-wrapper .not-verified,
+.main-wrapper .container form #market-segment-wrapper #verified-wrapper .not-verified,
+.main-wrapper .container form #payment-details-wrapper #verified-wrapper .not-verified,
+.main-wrapper .container form #add-subscription-details-wrapper #verified-wrapper .not-verified {
+  background-color: #fdb130;
+  color: #000;
+}
+.main-wrapper .container form #personal-details-wrapper #verified-wrapper .verified,
+.main-wrapper .container form #market-segment-wrapper #verified-wrapper .verified,
+.main-wrapper .container form #payment-details-wrapper #verified-wrapper .verified,
+.main-wrapper .container form #add-subscription-details-wrapper #verified-wrapper .verified {
+  background-color: green;
+  color: #fff;
+}
+.main-wrapper .container form #personal-details-wrapper #personal-details,
+.main-wrapper .container form #personal-details-wrapper #market-segment,
+.main-wrapper .container form #personal-details-wrapper #payment-details,
+.main-wrapper .container form #market-segment-wrapper #personal-details,
+.main-wrapper .container form #market-segment-wrapper #market-segment,
+.main-wrapper .container form #market-segment-wrapper #payment-details,
+.main-wrapper .container form #payment-details-wrapper #personal-details,
+.main-wrapper .container form #payment-details-wrapper #market-segment,
+.main-wrapper .container form #payment-details-wrapper #payment-details,
+.main-wrapper .container form #add-subscription-details-wrapper #personal-details,
+.main-wrapper .container form #add-subscription-details-wrapper #market-segment,
+.main-wrapper .container form #add-subscription-details-wrapper #payment-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.main-wrapper .container form #personal-details-wrapper #personal-details > *,
+.main-wrapper .container form #personal-details-wrapper #market-segment > *,
+.main-wrapper .container form #personal-details-wrapper #payment-details > *,
+.main-wrapper .container form #market-segment-wrapper #personal-details > *,
+.main-wrapper .container form #market-segment-wrapper #market-segment > *,
+.main-wrapper .container form #market-segment-wrapper #payment-details > *,
+.main-wrapper .container form #payment-details-wrapper #personal-details > *,
+.main-wrapper .container form #payment-details-wrapper #market-segment > *,
+.main-wrapper .container form #payment-details-wrapper #payment-details > *,
+.main-wrapper .container form #add-subscription-details-wrapper #personal-details > *,
+.main-wrapper .container form #add-subscription-details-wrapper #market-segment > *,
+.main-wrapper .container form #add-subscription-details-wrapper #payment-details > * {
+  width: 33%;
+  padding: 0 1rem;
+}
+@media (max-width: 1023px) {
+  .main-wrapper .container form #personal-details-wrapper #personal-details > *,
+.main-wrapper .container form #personal-details-wrapper #market-segment > *,
+.main-wrapper .container form #personal-details-wrapper #payment-details > *,
+.main-wrapper .container form #market-segment-wrapper #personal-details > *,
+.main-wrapper .container form #market-segment-wrapper #market-segment > *,
+.main-wrapper .container form #market-segment-wrapper #payment-details > *,
+.main-wrapper .container form #payment-details-wrapper #personal-details > *,
+.main-wrapper .container form #payment-details-wrapper #market-segment > *,
+.main-wrapper .container form #payment-details-wrapper #payment-details > *,
+.main-wrapper .container form #add-subscription-details-wrapper #personal-details > *,
+.main-wrapper .container form #add-subscription-details-wrapper #market-segment > *,
+.main-wrapper .container form #add-subscription-details-wrapper #payment-details > * {
+    width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  .main-wrapper .container form #personal-details-wrapper #personal-details > *,
+.main-wrapper .container form #personal-details-wrapper #market-segment > *,
+.main-wrapper .container form #personal-details-wrapper #payment-details > *,
+.main-wrapper .container form #market-segment-wrapper #personal-details > *,
+.main-wrapper .container form #market-segment-wrapper #market-segment > *,
+.main-wrapper .container form #market-segment-wrapper #payment-details > *,
+.main-wrapper .container form #payment-details-wrapper #personal-details > *,
+.main-wrapper .container form #payment-details-wrapper #market-segment > *,
+.main-wrapper .container form #payment-details-wrapper #payment-details > *,
+.main-wrapper .container form #add-subscription-details-wrapper #personal-details > *,
+.main-wrapper .container form #add-subscription-details-wrapper #market-segment > *,
+.main-wrapper .container form #add-subscription-details-wrapper #payment-details > * {
+    width: 100%;
+  }
+}
+.main-wrapper .container form #personal-details-wrapper #market-segment,
+.main-wrapper .container form #personal-details-wrapper #payment-details,
+.main-wrapper .container form #personal-details-wrapper #add-subscription-details,
+.main-wrapper .container form #market-segment-wrapper #market-segment,
+.main-wrapper .container form #market-segment-wrapper #payment-details,
+.main-wrapper .container form #market-segment-wrapper #add-subscription-details,
+.main-wrapper .container form #payment-details-wrapper #market-segment,
+.main-wrapper .container form #payment-details-wrapper #payment-details,
+.main-wrapper .container form #payment-details-wrapper #add-subscription-details,
+.main-wrapper .container form #add-subscription-details-wrapper #market-segment,
+.main-wrapper .container form #add-subscription-details-wrapper #payment-details,
+.main-wrapper .container form #add-subscription-details-wrapper #add-subscription-details {
+  margin-top: 2rem;
+}
+.main-wrapper .container form #personal-details-wrapper #market-segment .mat-checkbox,
+.main-wrapper .container form #personal-details-wrapper #market-segment .mat-form-field,
+.main-wrapper .container form #personal-details-wrapper #payment-details .mat-checkbox,
+.main-wrapper .container form #personal-details-wrapper #payment-details .mat-form-field,
+.main-wrapper .container form #personal-details-wrapper #add-subscription-details .mat-checkbox,
+.main-wrapper .container form #personal-details-wrapper #add-subscription-details .mat-form-field,
+.main-wrapper .container form #market-segment-wrapper #market-segment .mat-checkbox,
+.main-wrapper .container form #market-segment-wrapper #market-segment .mat-form-field,
+.main-wrapper .container form #market-segment-wrapper #payment-details .mat-checkbox,
+.main-wrapper .container form #market-segment-wrapper #payment-details .mat-form-field,
+.main-wrapper .container form #market-segment-wrapper #add-subscription-details .mat-checkbox,
+.main-wrapper .container form #market-segment-wrapper #add-subscription-details .mat-form-field,
+.main-wrapper .container form #payment-details-wrapper #market-segment .mat-checkbox,
+.main-wrapper .container form #payment-details-wrapper #market-segment .mat-form-field,
+.main-wrapper .container form #payment-details-wrapper #payment-details .mat-checkbox,
+.main-wrapper .container form #payment-details-wrapper #payment-details .mat-form-field,
+.main-wrapper .container form #payment-details-wrapper #add-subscription-details .mat-checkbox,
+.main-wrapper .container form #payment-details-wrapper #add-subscription-details .mat-form-field,
+.main-wrapper .container form #add-subscription-details-wrapper #market-segment .mat-checkbox,
+.main-wrapper .container form #add-subscription-details-wrapper #market-segment .mat-form-field,
+.main-wrapper .container form #add-subscription-details-wrapper #payment-details .mat-checkbox,
+.main-wrapper .container form #add-subscription-details-wrapper #payment-details .mat-form-field,
+.main-wrapper .container form #add-subscription-details-wrapper #add-subscription-details .mat-checkbox,
+.main-wrapper .container form #add-subscription-details-wrapper #add-subscription-details .mat-form-field {
+  width: 16.66%;
+  padding: 0 1rem;
+}
+@media (max-width: 1023px) {
+  .main-wrapper .container form #personal-details-wrapper #market-segment .mat-checkbox,
+.main-wrapper .container form #personal-details-wrapper #market-segment .mat-form-field,
+.main-wrapper .container form #personal-details-wrapper #payment-details .mat-checkbox,
+.main-wrapper .container form #personal-details-wrapper #payment-details .mat-form-field,
+.main-wrapper .container form #personal-details-wrapper #add-subscription-details .mat-checkbox,
+.main-wrapper .container form #personal-details-wrapper #add-subscription-details .mat-form-field,
+.main-wrapper .container form #market-segment-wrapper #market-segment .mat-checkbox,
+.main-wrapper .container form #market-segment-wrapper #market-segment .mat-form-field,
+.main-wrapper .container form #market-segment-wrapper #payment-details .mat-checkbox,
+.main-wrapper .container form #market-segment-wrapper #payment-details .mat-form-field,
+.main-wrapper .container form #market-segment-wrapper #add-subscription-details .mat-checkbox,
+.main-wrapper .container form #market-segment-wrapper #add-subscription-details .mat-form-field,
+.main-wrapper .container form #payment-details-wrapper #market-segment .mat-checkbox,
+.main-wrapper .container form #payment-details-wrapper #market-segment .mat-form-field,
+.main-wrapper .container form #payment-details-wrapper #payment-details .mat-checkbox,
+.main-wrapper .container form #payment-details-wrapper #payment-details .mat-form-field,
+.main-wrapper .container form #payment-details-wrapper #add-subscription-details .mat-checkbox,
+.main-wrapper .container form #payment-details-wrapper #add-subscription-details .mat-form-field,
+.main-wrapper .container form #add-subscription-details-wrapper #market-segment .mat-checkbox,
+.main-wrapper .container form #add-subscription-details-wrapper #market-segment .mat-form-field,
+.main-wrapper .container form #add-subscription-details-wrapper #payment-details .mat-checkbox,
+.main-wrapper .container form #add-subscription-details-wrapper #payment-details .mat-form-field,
+.main-wrapper .container form #add-subscription-details-wrapper #add-subscription-details .mat-checkbox,
+.main-wrapper .container form #add-subscription-details-wrapper #add-subscription-details .mat-form-field {
+    width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  .main-wrapper .container form #personal-details-wrapper #market-segment .mat-checkbox,
+.main-wrapper .container form #personal-details-wrapper #market-segment .mat-form-field,
+.main-wrapper .container form #personal-details-wrapper #payment-details .mat-checkbox,
+.main-wrapper .container form #personal-details-wrapper #payment-details .mat-form-field,
+.main-wrapper .container form #personal-details-wrapper #add-subscription-details .mat-checkbox,
+.main-wrapper .container form #personal-details-wrapper #add-subscription-details .mat-form-field,
+.main-wrapper .container form #market-segment-wrapper #market-segment .mat-checkbox,
+.main-wrapper .container form #market-segment-wrapper #market-segment .mat-form-field,
+.main-wrapper .container form #market-segment-wrapper #payment-details .mat-checkbox,
+.main-wrapper .container form #market-segment-wrapper #payment-details .mat-form-field,
+.main-wrapper .container form #market-segment-wrapper #add-subscription-details .mat-checkbox,
+.main-wrapper .container form #market-segment-wrapper #add-subscription-details .mat-form-field,
+.main-wrapper .container form #payment-details-wrapper #market-segment .mat-checkbox,
+.main-wrapper .container form #payment-details-wrapper #market-segment .mat-form-field,
+.main-wrapper .container form #payment-details-wrapper #payment-details .mat-checkbox,
+.main-wrapper .container form #payment-details-wrapper #payment-details .mat-form-field,
+.main-wrapper .container form #payment-details-wrapper #add-subscription-details .mat-checkbox,
+.main-wrapper .container form #payment-details-wrapper #add-subscription-details .mat-form-field,
+.main-wrapper .container form #add-subscription-details-wrapper #market-segment .mat-checkbox,
+.main-wrapper .container form #add-subscription-details-wrapper #market-segment .mat-form-field,
+.main-wrapper .container form #add-subscription-details-wrapper #payment-details .mat-checkbox,
+.main-wrapper .container form #add-subscription-details-wrapper #payment-details .mat-form-field,
+.main-wrapper .container form #add-subscription-details-wrapper #add-subscription-details .mat-checkbox,
+.main-wrapper .container form #add-subscription-details-wrapper #add-subscription-details .mat-form-field {
+    width: 100%;
+  }
+}
+.main-wrapper .container form .file-download-wrapper {
+  display: flex;
+  align-items: center;
+}
+.main-wrapper .container form .file-download-wrapper .mat-form-field {
+  margin-right: 1rem;
+  flex-grow: 1;
+}
+.main-wrapper .container form .file-download-wrapper button .mat-icon {
+  font-size: 2rem;
+}
+.main-wrapper .container form #button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .main-wrapper .container form #button-wrapper > *:first-child {
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .main-wrapper .container form #button-wrapper {
+    flex-direction: column;
+  }
+  .main-wrapper .container form #button-wrapper > *:first-child {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+/*# sourceMappingURL=edit-confirm-maker.component.css.map */

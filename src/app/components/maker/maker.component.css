@@ -1,0 +1,13 @@
+.container {
+  padding: 1rem 2rem;
+}
+
+.mat-tab-link {
+  color: #3a2d7d;
+}
+.mat-tab-link.active {
+  border-bottom: 2px solid #3a2d7d;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=maker.component.css.map */

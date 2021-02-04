@@ -1,0 +1,79 @@
+.container {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.container > * {
+  width: 50%;
+}
+.container > .left-section {
+  height: 100%;
+  position: relative;
+  background-image: url("../../../assets/images/backgroung_nse.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.container > .left-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3a2d7d;
+  opacity: 0.6;
+  z-index: 1;
+}
+.container > .left-section .wrapper {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container > .left-section .wrapper img {
+  height: 10rem;
+  display: block;
+  margin: 0 auto;
+}
+.container > .left-section .wrapper .text-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+.container > .left-section .wrapper .text-wrapper p {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  line-height: calc(2rem * 1.42857);
+  letter-spacing: 0.3rem;
+}
+.container > .left-section .wrapper .text-wrapper h2 {
+  font-size: 4rem;
+  line-height: calc(4rem * 1.42857);
+}
+@media (max-width: 1023px) {
+  .container > .left-section {
+    display: none;
+  }
+}
+.container > .right-section {
+  height: 100%;
+  color: #000;
+  overflow-y: hidden;
+}
+@media (max-width: 1023px) {
+  .container > .right-section {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .container > .right-section {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=login.component.css.map */
